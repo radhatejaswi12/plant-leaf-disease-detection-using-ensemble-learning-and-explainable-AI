@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Leaf Disease Detection using Ensemble Learning and Explainable AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #4CAF50;
+            overflow: hidden;
+            padding: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .navbar a:hover {
+            background-color: #45a049;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #4CAF50;
+            font-size: 28px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-size: 18px;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        td {
+            color: #333;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+    </div>
+
+<div class="container">
+    <h1>Result is Given Below</h1>
+    <h1>Details for {{ details["plant_name"] }}</h1>
+    
+    <table>
+        <tr>
+            <th>Disease Name</th>
+            <td>{{ details["disease_name"] }}</td>
+        </tr>
+        <tr>
+            <th>Cure</th>
+            <td>{{ details["cure"] }}</td>
+        </tr>
+        <tr>
+            <th>Precaution</th>
+            <td>{{ details["precaution"] }}</td>
+        </tr>
+        <tr>
+            <th>Chemicals Used</th>
+            <td>{{ details["chemicals_used"] }}</td>
+        </tr>
+    </table>
+
+
+
+        
+        <img src="{{ url_for('static', filename='/output_image.png') }}" alt="image" class="img-fluid">
+        <img src="{{ url_for('static', filename='/heatmap_overlay.jpg') }}" alt="image" class="img-fluid">
+    </div>
+
+    <div class="footer">
+    </div>
+
+</body>
+</html>
