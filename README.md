@@ -2,7 +2,7 @@
 
 This project leverages deep learning models to classify plant leaf diseases using selected classes from the [PlantVillage dataset](https://www.kaggle.com/datasets/emmarex/plantdisease). It aims to assist in early and accurate detection of plant diseases to support agriculture and farming practices.
 
-## 📁 Dataset
+##  Dataset
 
 - **Source**: PlantVillage (via Kaggle)
 - **Classes Selected**: A subset of classes ("Apple___Apple_scab",
@@ -47,7 +47,7 @@ Implemented multiple models to compare performance:
 - OpenCV, NumPy, Matplotlib, scikit-learn
 - HTML, CSS and Flask for deployment
 
-## 🚀 Deployment
+## Deployment
 
 The final model is deployed for real-time prediction. Upload a leaf image and get the predicted disease class.
 
