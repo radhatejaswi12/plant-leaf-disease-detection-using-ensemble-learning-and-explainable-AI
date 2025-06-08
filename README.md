@@ -1,6 +1,6 @@
 # plant-leaf-disease-detection-using-ensemble-learning-and-explainable-AI
 
-This project leverages deep learning models to classify plant leaf diseases using selected classes from the [PlantVillage dataset](https://www.kaggle.com/datasets/emmarex/plantdisease). It aims to assist in early and accurate detection of plant diseases to support agriculture and farming practices.
+This project leverages deep learning models to classify plant leaf diseases using selected classes from the [PlantVillage dataset](https://www.kaggle.com/datasets/mohitsingh1804/plantvillage). It aims to assist in early and accurate detection of plant diseases to support agriculture and farming practices.
 
 ##  Dataset
 
