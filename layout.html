@@ -125,6 +125,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- css files -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
 	<!-- bootstrap css -->
 	<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
 	<!-- custom css -->
@@ -132,6 +133,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //css files -->
 	<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png?') }}"> -->
 
+
+	<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
 
 
 	<!-- google fonts -->
@@ -187,7 +190,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<!-- logo -->
 			<h2 class="logo2 text-center">
 				<a href="{{ url_for('home') }}">
-					Plant Lead Disease Detection using Ensemble Learning and Explainable AI
+					Medicinal Plant Detection Using Deeplearning
 				</a>
 			</h2>
 			<!-- //logo -->
@@ -202,10 +205,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</p>
 			</div>
 			<div class="w3l-copy text-center">
+				<p class="text-da">By Team :<br> </p>
 			</div>
 			<p class="homelogo">
 			<p></p>
-			
+			<p>&copy; Copyright 2024 </p>
 			
 		</div>
 	</footer>
